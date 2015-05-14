@@ -21,5 +21,5 @@ getQuery(), getPost() and getUserAgent() which saves you from needing to directl
 superglobals.
 
 If your contributing new functions, try to make sure they are named consistently with existing PHPServices functions and have a 
-consistent parameter order. You don't have to replicate the function names and parameter order of the php standard library. Function
+consistent parameter order. You don't have to replicate the function names and parameter orders of the php standard library. Function
 names should follow PSR naming conventions with no abbreviations of words.
