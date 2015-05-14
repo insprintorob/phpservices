@@ -1,5 +1,5 @@
 {
-    "name": "insprinto/phpservices",
+    "name": "insprintorob/phpservices",
     "description": "Insprinto PHP Services Module. Provides mockable classes that wrap around standard PHP functionality",
     "require": {
         "php": ">=5.4"
