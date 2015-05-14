@@ -1,5 +1,5 @@
 <?php
-namespace Access;
+namespace PHPServices;
 
 class Module
 {
