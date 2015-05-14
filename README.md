@@ -6,7 +6,7 @@ Installation
 Install using composer
 
 ```
-require insprintorob/phpservices
+        require "insprintorob/phpservices": "dev-master"
 ```
 
 Purpose
