@@ -12,7 +12,7 @@ require insprintorob/phpservices
 Purpose
 ---
 Years ago what initially attracted me to PHP was the huge standard library with its massive array of built in functionality.
-However, the standard library is not 100% consistent with its function names and parameter order. If your doing modern test
+However, the standard library is not 100% consistent with its function names and parameter orders. If your doing modern test
 driven development, calls to the standard library cannot be tested by unit tests.
 
 PHPServices provides classes that wrap around standard PHP functionality such as the standard library. For example, instead
