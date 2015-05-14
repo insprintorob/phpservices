@@ -1,6 +1,7 @@
 {
     "name": "insprintorob/phpservices",
     "description": "Insprinto PHP Services Module. Provides mockable classes that wrap around standard PHP functionality",
+    "license": "BSD-3-Clause",
     "require": {
         "php": ">=5.4"
     },
