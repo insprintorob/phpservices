@@ -12,8 +12,8 @@ Install using composer
 Purpose
 ---
 Years ago what initially attracted me to PHP was the huge standard library of built in functions with its massive array of 
-built in functionality. However, the built in functions are is not 100% consistent with their function names and parameter orders. 
-If your doing modern test driven development, calls to built in functions cannot be tested by unit tests.
+functionality. However, the built in functions are is not 100% consistent with their names and parameter orders. If your doing 
+modern Test Driven Development, calls to built in functions cannot be tested by unit tests.
 
 PHPServices provides classes that wrap around standard PHP functionality such as the standard built in functions. For example, instead
 of str_replace(), you might use $stringOperations->replace(). It also provides HttpService, with functionality such as 
