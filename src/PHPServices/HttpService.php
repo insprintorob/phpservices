@@ -60,6 +60,22 @@ class HttpService
         }
     }
 
+    public function getParam($key)
+    {
+        $query = $this->getQuery($key);
+        $post = $this->getPost($key);
+
+        if($query !== null) {
+            return $query;
+        }
+
+        if($post !== null) {
+            return $post;
+        }
+
+        return null;
+    }
+
     public function getRequestUri()
     {
         return $_SERVER['REQUEST_URI'];
