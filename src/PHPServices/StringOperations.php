@@ -11,6 +11,16 @@ namespace PHPServices;
 
 class StringOperations
 {
+    public function lowercase($string)
+    {
+        return strtolower($string);
+    }
+
+    public function firstCharacter($string)
+    {
+        return $string[0];
+    }
+
     public function replace($find, $replace, $string)
     {
         $newString = str_replace($find, $replace, $string);
