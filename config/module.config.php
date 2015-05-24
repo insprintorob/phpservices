@@ -3,6 +3,7 @@ return array(
     'service_manager' => array(
         'factories' => array(
             'HttpService' => 'PHPServices\Factory\HttpServiceFactory',
+            'CryptoService' => 'PHPServices\Factory\CryptoServiceFactory',
         ),
         'invokables' => array(
             'FileOperations' => 'PHPServices\FileOperations',
