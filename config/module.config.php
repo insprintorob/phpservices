@@ -10,7 +10,8 @@ return array(
             'StringOperations' => 'PHPServices\StringOperations',
             'ArrayOperations' => 'PHPServices\ArrayOperations',
             'MathOperations' => 'PHPServices\MathOperations',
-            'SystemOperations' => 'PHPServices\SystemOperations'
+            'SystemOperations' => 'PHPServices\SystemOperations',
+            'VariableOperations' => 'PHPServices\VariableOperations'
         ),
     )
 );
