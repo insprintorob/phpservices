@@ -11,7 +11,8 @@ return array(
             'ArrayOperations' => 'PHPServices\ArrayOperations',
             'MathOperations' => 'PHPServices\MathOperations',
             'SystemOperations' => 'PHPServices\SystemOperations',
-            'VariableOperations' => 'PHPServices\VariableOperations'
+            'VariableOperations' => 'PHPServices\VariableOperations',
+            'TimeOperations' => 'PHPServices\TimeOperations'
         ),
     )
 );
