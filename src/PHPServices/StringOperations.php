@@ -65,6 +65,12 @@ class StringOperations
         return $string;
     }
 
+    public function exportToString($var)
+    {
+        $exported = var_export($var, true);
+        return $exported;
+    }
+
     public static function __callStatic($name, $arguments)
     {
         $stringOperations = new StringOperations();
