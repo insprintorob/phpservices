@@ -145,6 +145,18 @@ class StringOperations
         return strlen($string);
     }
 
+    /**
+     * Normalised parameters
+     * Subject is the last parameter
+     *
+     * @param $string
+     * @param $subject
+     * @return bool|int
+     */
+    public function stringPosition($string, $subject) {
+        return strpos($subject, $string);
+    }
+
     public static function __callStatic($name, $arguments)
     {
         $stringOperations = new StringOperations();
