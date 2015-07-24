@@ -37,4 +37,9 @@ class ArrayOperations
     {
         return sizeof($var);
     }
-} 
+
+    public function flip($array)
+    {
+        return array_flip($array);
+    }
+}

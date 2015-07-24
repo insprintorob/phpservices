@@ -11,6 +11,11 @@ namespace PHPServices;
 
 class StringOperations
 {
+    public function uppercase($string)
+    {
+        return strtoupper($string);
+    }
+
     /**
      * @param $string
      * @return string
@@ -153,8 +158,14 @@ class StringOperations
      * @param $subject
      * @return bool|int
      */
-    public function stringPosition($string, $subject) {
+    public function stringPosition($string, $subject)
+    {
         return strpos($subject, $string);
+    }
+
+    public function upperCaseFirst($string)
+    {
+        return ucfirst($string);
     }
 
     public static function __callStatic($name, $arguments)
