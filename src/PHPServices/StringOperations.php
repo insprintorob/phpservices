@@ -124,6 +124,23 @@ class StringOperations
     }
 
     /**
+     * Return the first match of a regular expression.
+     * Good if you know you will only get one result.
+     *
+     * @param $pattern
+     * @param $subject
+     * @return array
+     */
+    public function matchOneRegex($pattern, $subject)
+    {
+        $matches = array();
+
+        preg_match($pattern, $subject, $matches);
+
+        return $matches[0];
+    }
+
+    /**
      * Normalized parameters of native PHP function
      * As with the other string functions in this class
      * the subject is the last parameter.

@@ -12,7 +12,8 @@ return array(
             'MathOperations' => 'PHPServices\MathOperations',
             'SystemOperations' => 'PHPServices\SystemOperations',
             'VariableOperations' => 'PHPServices\VariableOperations',
-            'TimeOperations' => 'PHPServices\TimeOperations'
+            'TimeOperations' => 'PHPServices\TimeOperations',
+            'DataTransformer' => 'PHPServices\DataTransformer'
         ),
     )
 );
