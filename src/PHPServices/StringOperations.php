@@ -110,6 +110,29 @@ class StringOperations
     }
 
     /**
+     * Strip text matched by the first matched regex
+     *
+     * @param $pattern
+     * @param $subject
+     * @return string
+     */
+    public function stripRegex($pattern, $subject) {
+        $matches = array();
+
+        preg_match($pattern, $subject, $matches);
+
+        if(isset($matches[0])) {
+            $firstMatch = $matches[0];
+        } else {
+            $firstMatch = '';
+        }
+
+        $subject = str_replace($firstMatch, '', $subject);
+
+        return $subject;
+    }
+
+    /**
      * @param $pattern
      * @param $subject
      * @return array
