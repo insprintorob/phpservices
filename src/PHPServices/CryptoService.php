@@ -35,6 +35,12 @@ class CryptoService
         return $hashedSeed;
     }
 
+    public function createHash() {
+        $hash = $this->secureHashPassword(uniqid() + time() + uniqid());
+
+        return $hash;
+    }
+
     public function generateUniqueId()
     {
         $uniqueId = hash('sha256', (time().uniqid().rand(1, 100000)));
