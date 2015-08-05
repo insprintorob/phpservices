@@ -105,6 +105,13 @@ class HttpService
         $_COOKIE[$name] = $value;
     }
 
+    public function setSuperCookie($name, $value, $secure = false)
+    {
+        $cookieDomain = $this->config['cookie_domain'];
+        setcookie($name, $value, (time() + (10 * 365 * 24 * 60 * 60)), '/', $cookieDomain, $secure);
+        $_COOKIE[$name] = $value;
+    }
+
     public function deleteCookie($name)
     {
         $cookieDomain = $this->config['cookie_domain'];
