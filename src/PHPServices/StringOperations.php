@@ -146,6 +146,15 @@ class StringOperations
         return $matches;
     }
 
+    public function countRegex($pattern, $subject)
+    {
+        $matches = array();
+
+        preg_match($pattern, $subject, $matches);
+
+        return count($matches);
+    }
+
     /**
      * Return the first match of a regular expression.
      * Good if you know you will only get one result.
